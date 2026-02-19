@@ -1,122 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Keerthana J | AI & ML Portfolio</title>
+    <title>Keerthana J | AI & ML Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
+            background-color: #0f2027;
+            color: #ffffff;
         }
 
-        header {
-            background: linear-gradient(135deg, #1f3c88, #0f2027);
-            color: white;
-            padding: 60px 20px;
+        nav {
+            background: #1f3c88;
+            padding: 15px 0;
             text-align: center;
         }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
         header h1 {
-            margin: 0;
-            font-size: 40px;
+            font-size: 45px;
+            margin-bottom: 10px;
         }
 
         header p {
             font-size: 18px;
-            margin-top: 10px;
-        }
-
-        section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #1f3c88;
-            margin-bottom: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+            color: #cfd8dc;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #1f3c88;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
         }
 
         footer {
-            background: #1f3c88;
-            color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 30px;
+            background: #1f3c88;
         }
     </style>
 </head>
 <body>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
     <h1>Keerthana J</h1>
-    <p>AI & Machine Learning Student | Data Analytics Enthusiast</p>
+    <p>AI & Machine Learning Engineer | Data Analytics Enthusiast</p>
+    <a href="#" class="btn">Download Resume</a>
 </header>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
-    <div class="card">
-        <p>I am a B.Tech AI & ML student with strong foundation in Python, data analysis, and supervised learning. I enjoy building intelligent systems and solving real-world problems using data-driven approaches.</p>
-    </div>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        AI & ML undergraduate with strong foundation in Python, supervised learning, and data analytics.
+        Passionate about building intelligent systems and solving real-world problems using data-driven approaches.
+    </p>
 </section>
 
-<section>
+<section id="projects">
     <h2>Projects</h2>
-
-    <div class="card">
-        <h3>House Price Prediction</h3>
-        <p>Built a regression model using Scikit-learn to predict housing prices with high accuracy.</p>
-    </div>
-
-    <div class="card">
-        <h3>Sales Data Analytics</h3>
-        <p>Performed data cleaning, EDA, and created visual dashboards to identify sales trends.</p>
-    </div>
-
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <div class="card">
-        <p><strong>Programming:</strong> Python, Java</p>
-        <p><strong>Libraries:</strong> Pandas, NumPy, Matplotlib</p>
-        <p><strong>Web:</strong> HTML, CSS</p>
+    <div class="grid">
+        <div class="card">
+            <h3>House Price Prediction</h3>
+            <p>Built regression model using Scikit-learn with feature engineering and model tuning.</p>
+        </div>
+        <div class="card">
+            <h3>Sales Analytics Dashboard</h3>
+            <p>Performed EDA and created interactive visualizations to identify KPIs and trends.</p>
+        </div>
+        <div class="card">
+            <h3>AI Content Detector</h3>
+            <p>Designed ML-based system to detect AI-generated content with preprocessing pipeline.</p>
+        </div>
     </div>
 </section>
 
-<section>
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python, Java</p>
+        </div>
+        <div class="card">
+            <h3>ML & Data</h3>
+            <p>Regression, Classification, Pandas, NumPy</p>
+        </div>
+        <div class="card">
+            <h3>Web & Tools</h3>
+            <p>HTML, CSS, Git, GitHub</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
     <h2>Contact</h2>
-    <div class="card">
-        <p>Email: keerthanajayavel5@gmail.com</p>
-        <p>GitHub: github.com/keerthuaiml</p>
-        <p>LinkedIn: linkedin.com/in/keerthana-jayavel</p>
-    </div>
+    <p style="text-align:center;">
+        📧 keerthanajayavel5@gmail.com <br><br>
+        🔗 github.com/keerthuaiml <br><br>
+        🔗 linkedin.com/in/keerthana-jayavel
+    </p>
 </section>
 
 <footer>
-    © 2026 Keerthana J | AI Portfolio
+    © 2026 Keerthana J | AI & ML Portfolio
 </footer>
 
 </body>
 </html>
-
